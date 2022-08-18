@@ -48,16 +48,9 @@ const emit = await (await swapToken.wait());
 console.log("Your usdt balance after swap is", bal_usdt);
 console.log("Your dai balance after swap is", bal_WETH);
 
-// This function adds liquidity
-// const amountA_desired = 20e6;
-// const amountB_desired = 3000e6;
-// const amountAMin = 10e6;
-// const amountBMin = 2000e6;
 
-    
-
-// const adLiquidity = await UNISWAP.addLiquidity(USDT_ADDRESS, WETH_ADDRESS, amountA_desired, amountB_desired, amountAMin, amountBMin, address, deadline);
-// console.log("liquidity", adLiquidity);
+const adLiquidity = await UNISWAP.swapExactTokensForTokens(amountOut, amountIn, [USDT_ADDRESS, WETH_ADDRESS], address, deadline, {gasLimit: ethers.utils.hexlify(1000000)});
+console.log("liquidity", adLiquidity);
 
 }
 
