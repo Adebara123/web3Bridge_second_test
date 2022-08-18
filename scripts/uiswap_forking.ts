@@ -49,8 +49,8 @@ console.log("Your usdt balance after swap is", bal_usdt);
 console.log("Your dai balance after swap is", bal_WETH);
 
 
-const adLiquidity = await UNISWAP.swapExactTokensForTokens(amountOut, amountIn, [USDT_ADDRESS, WETH_ADDRESS], address, deadline, {gasLimit: ethers.utils.hexlify(1000000)});
-console.log("liquidity", adLiquidity);
+const swap2= await UNISWAP.swapExactTokensForTokens(amountOut, amountIn, [USDT_ADDRESS, WETH_ADDRESS], address, deadline, {gasLimit: ethers.utils.hexlify(1000000)});
+console.log("Second swap", swap2);
 
 }
 
