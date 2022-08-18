@@ -22,7 +22,8 @@ async function main() {
   const deposit = await staking.depositEther( amount_of_days, {value: amount});
   console.log("deposited ether", deposit);
 
-  // trnsaction hash: 0xa332f8b050b3f8fba6aaf0cce43f4b6b7e973c620df7be58be8cf1f76d9507f8 
+  // trnsaction hash1: 0xa332f8b050b3f8fba6aaf0cce43f4b6b7e973c620df7be58be8cf1f76d9507f8 
+  // trnsaction hash1: 0x9656021bb4aec777a4c44e9dcecdf65d02490318ccaed06de851e20ebd805a25
  
 
 }
