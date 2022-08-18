@@ -17,7 +17,7 @@ async function main() {
   const amount_of_days = 14;
   const amount = ethers.utils.parseEther("0.5");
 
-  const deposit = await staking.depositEther({value: amount}, amount_of_days);
+  const deposit = await staking.depositEther( amount_of_days, {value: amount});
   console.log("deposited ether", deposit);
  
 
